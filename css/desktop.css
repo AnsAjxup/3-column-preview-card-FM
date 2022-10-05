@@ -1,0 +1,23 @@
+.container-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 30rem;
+}
+.card__paragraph{
+    margin-top: 0;
+}
+.card-one--color{
+    border-radius: 1rem 0 0 1rem;
+}
+.card-three--color{
+    border-radius: 0 1rem 1rem 0;
+}
+.card__title{
+    margin: 3rem 0;
+}
+.card__btn{
+    margin-top: 10rem;
+} 

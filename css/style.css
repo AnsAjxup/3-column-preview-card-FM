@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    /* Colors */
+    /* Primary Colors */
+    --brightOrange-backgroundCard: hsl(31, 77%, 52%);
+    --darkCyan-backgroundCard: hsl(184, 100%, 22%);
+    --veryDarkCyan-backgroundCard: hsl(179, 100%, 13%);
+    /* Neutral Colors */
+    --transparentWhite-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --veryLightGray-background-headings-buttons: hsl(0, 0%, 95%);
+    /* Typography */
+    --fontLexendDeca-paragraph: 'Lexend Deca', sans-serif;
+    --fontBigShoulders-title: 'Big Shoulders Display', cursive;
+    --paragraph-size: 1.5rem;
+    --title-size: 2.8rem;
+    --paragraph-weight: 400;
+    --title-weight: 700;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    padding: 3.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--veryLightGray-background-headings-buttons);
+}
+.container-card{
+    width: 32rem;
+    border-radius: 1rem;
+}
+.card{
+    width: 100%;
+    padding: 4rem;
+}
+.card-one--color{
+    background-color: var(--brightOrange-backgroundCard);
+    border-radius: 1rem 1rem 0 0;
+}
+.card-two--color{
+    background-color: var(--darkCyan-backgroundCard);
+}
+.card-three--color{
+    background-color: var(--veryDarkCyan-backgroundCard);
+    border-radius: 0 0 1rem 1rem;
+}
+.card__logo{
+    width: 4.5rem;
+}
+.card__title{
+    font-family: var(--fontBigShoulders-title);
+    font-size: var(--title-size);
+    font-weight: var(--title-weight);
+    color: var(--veryLightGray-background-headings-buttons);
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+.card__paragraph{
+    font-family: var(--fontLexendDeca-paragraph);
+    font-size: var(--paragraph-size);
+    font-weight: var(--paragraph-weight);
+    color: var(--transparentWhite-paragraphs);
+}
+.card__btn{
+    width: 16rem;
+    height: 5rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 50rem;
+    font-family: var(--fontLexendDeca-paragraph);
+    font-size: var(--paragraph-size);
+    font-weight: var(--paragraph-weight);
+    background-color: var(--veryLightGray-background-headings-buttons);
+}
+.card__btn-one--color{
+    color: var(--brightOrange-backgroundCard);
+}
+.card__btn-two--color{
+    color: var(--darkCyan-backgroundCard);
+}
+.card__btn-three--color{
+    color: var(--veryDarkCyan-backgroundCard);
+}
+.card__btn:hover{
+    border: 2px solid var(--veryLightGray-background-headings-buttons);
+    background-color: transparent;
+    color: var(--veryLightGray-background-headings-buttons);
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    margin-top: 3rem;
+}
+.attribution a
+{
+    color: hsl(228, 45%, 44%);
+}
